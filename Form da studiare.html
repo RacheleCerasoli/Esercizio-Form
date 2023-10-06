@@ -1,0 +1,89 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrazione</title>
+
+</head>
+
+<body>
+    <h1>Registrazione alla piattaforma</h1>
+    <form action="processa_registrazione.php" method="post">
+        <!-- Campo Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <!-- Campo Password -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+
+        <!-- Campo Nome e Cognome -->
+        <label for="nome">Nome e Cognome:</label>
+        <input type="text" id="nome" name="nome" required><br>
+
+        <!-- Campo Data di nascita -->
+        <label for="data_nascita">Data di nascita:</label>
+        <input type="date" id="data_nascita" name="data_nascita" required><br>
+
+        <!-- Campo Numero di telefono -->
+        <label for="telefono">Numero di telefono:</label>
+        <input type="tel" id="telefono" name="telefono" required><br>
+
+        <!-- Selettore per il piano di abbonamento -->
+        <label for="piano_abbonamento">Piano di abbonamento:</label>
+        <select id="piano_abbonamento" name="piano_abbonamento" required>
+            <option value="free">Free</option>
+            <optgroup label="Piani_a_pagamento">
+                <option value="piano1">Piano 1 - Prezzo crescente</option>
+                <option value="piano2">Piano 2 - Prezzo crescente</option>
+                <option value="piano3">Piano 3 - Prezzo crescente</option>
+            </optgroup>
+        </select><br>
+
+        <!-- Campo per i vantaggi PRO -->
+        <label for="vantaggi_pro">Aggiungi vantaggi PRO:</label>
+        <input type="checkbox" id="vantaggi_pro" name="vantaggi_pro"><br>
+
+        <!-- Campi per l'inserimento della carta di credito -->
+        <label for="numero_carta">Numero di carta di credito:</label>
+        <input type="text" id="numero_carta" name="numero_carta" required><br>
+
+        <label for="cvc">CVC:</label>
+        <input type="text" id="cvc" name="cvc" required><br>
+
+        <label for="scadenza">Scadenza:</label>
+        <input type="text" id="scadenza" name="scadenza" required><br>
+
+        <!-- Indirizzo di fatturazione -->
+        <label for="indirizzo_fatturazione">Indirizzo di fatturazione:</label>
+        <textarea id="indirizzo_fatturazione" name="indirizzo_fatturazione" required></textarea><br>
+
+        <!-- Pulsante di invio -->
+        <input type="submit" value="Registrati">
+
+
+
+
+        <div>
+            <!-- Pulsante disabilitato -->
+            <button disabled>Questo è un pulsante disabilitato</button>
+
+            <!-- Input numerico con label -->
+            <label for="numero"></label>
+            <input type="number" id="numero" name="numero" min="0" max="100" step="2">
+
+            <!-- Checkbox con label (già selezionata) -->
+            <label for="checkbox">Seleziona questa casella:</label>
+            <input type="checkbox" id="checkbox" name="checkbox" checked>
+
+            <!-- Input di tipo date -->
+            <label for="data">Seleziona una data:</label>
+            <input type="date" id="data" name="data">
+        </div>
+
+
+    </form>
+</body>
+
+</html>

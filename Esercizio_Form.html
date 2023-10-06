@@ -1,0 +1,65 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/style.css" rel="stylesheet" />
+    <title>Form</title>
+</head>
+
+<body>
+    <h1>Registrazione al modulo</h1>
+    <form>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+
+        <label for="nome">Nome e Cognome:</label>
+        <input type="text" id="nome" name="nome" required><br>
+
+        <label for="data_nascita">Data di nascita:</label>
+        <input type="date" id="data_nascita" name="data_nascita" required><br>
+
+        <label for="telefono">Numero di telefono:</label>
+        <input type="tel" id="telefono" name="telefono" required><br>
+
+        <label for="piano_abbonamento">Piano di abbonamento:</label>
+        <select name="piano_abbonamento" id="piano_abbonamento" required>
+            <option value="free">Free</option>
+            <optgroup label="Piani a pagamento">
+                <option value="piano1">Piano 1</option>
+                <option value="piano2">Piano 2</option>
+                <option value="piano3">Piano 3</option>
+            </optgroup>
+        </select><br>
+
+        <label for="vantaggi_pro">Aggiungi vantaggi PRO:</label>
+        <input type="checkbox" name="vantaggi_pro" id="vantaggi_pro"><br>
+
+        <label for="numero_carta">Numero di carta di credito:</label>
+        <input type="text" name="numero_carta" id="numero_carta" required pattern="[0-9]{16}" title="Inserisci un numero carta valido"><br>
+
+        <label for="cvc">CVC</label>
+        <input type="text" name="cvc" id="cvc" required pattern="[0-9]{3}" title="Inserisci cvc valido"><br>
+
+        <label for="scadenza">Scadenza:</label>
+        <input type="text" name="scadenza" id="scadenza" required><br>
+
+        <label for="indirizzo_fatturazione">Indirizzo di fatturazione:</label>
+        <textarea name="indirizzo_fatturazione" id="indirizzo_fatturazione" required></textarea><br>
+
+        <input type="submit" value="Registrati">
+
+        <div>
+            <button disabled>Questo è un pulsante disabilitato</button>
+
+            <label for="numero"></label>
+            <input type="number" id="numero" name="numero" min="0" max="100" step="2">
+        </div>
+
+    </form>
+</body>
+
+</html>
